@@ -15,13 +15,17 @@ namespace LineComparisonProblem
             LineComparision line1 = new LineComparision(obj1.X1,obj1.X2,obj1.Y1,obj1.Y2);
             double length2 = line1.CalculateLengthOfLine();
 
-            if (length1 == length2)
+            if (length1 > length2)
             {
-                Console.WriteLine("Length of Two Lines are Same");
+                Console.WriteLine("Length of Line 1 is Greater than Length of Line 2");
+            }
+            else if (length1 < length2)
+            {
+                Console.WriteLine("Length of Line 1 is smaller than Length of Line 2");
             }
             else
             {
-                Console.WriteLine("Length of Two Lines are Not Same");
+                Console.WriteLine("Length of Two Lines are Same");
             }
         }
     }
