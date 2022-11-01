@@ -42,7 +42,7 @@ namespace LineComparisonProblem.Repository
         }
         public static LineComparision UserInputForLine2()
         {
-            Console.WriteLine("Enter 2nd Line Co-Ordinates");
+            Console.WriteLine("Enter 1st Line Co-Ordinates");
             Console.Write("Enter X1 Co-ordinate : ");
             int xl1 = Convert.ToInt32(Console.ReadLine());
 
